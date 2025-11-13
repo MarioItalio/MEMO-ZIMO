@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory — dopasuj opis do zdjęcia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- EKRAN STARTOWY -->
+  <div id="screen1" class="screen active">
+    <h1>Memory — dopasuj opis do zdjęcia</h1>
+    <form id="startForm">
+      <label>Imię:
+        <input type="text" id="playerName" placeholder="Twoje imię" required>
+      </label>
+      <label>Nazwisko / Szkoła:
+        <input type="text" id="playerSchool" placeholder="Nazwisko lub szkoła" required>
+      </label>
+      <button type="submit" id="startBtn">Start</button>
+    </form>
+    <p>Gra działa na telefonach i laptopach — kliknij Start, aby rozpocząć.</p>
+  </div>
+
+  <!-- EKRAN GRY -->
+  <div id="gameScreen" class="screen hidden">
+    <div id="topBar">
+      <span id="playerInfo"></span>
+      <span id="movesCount"></span>
+    </div>
+    <div id="board"></div>
+  </div>
+
+  <!-- EKRAN KOŃCOWY -->
+  <div id="finalScreen" class="screen hidden">
+    <h2>Gratulacje!</h2>
+    <p id="finalText"></p>
+    <h3>A czy Ty zapisałeś się już na zimowisko? ☃️</h3>
+    <button id="playAgain">Zagraj ponownie</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
